@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>BrunoDev</title>    
+</head>
+<body>
+
+    <div class="particulas"></div>
+    <nav class="navegacao">
+        
+    
+
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Incio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- Botão do menu mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    
+
+    <nav class="menu-mobile" id="menuMobile">
+        <ul>
+          <li><a href="#inicio" onclick="fecharMenu()">Início</a></li>
+          <li><a href="#sobre" onclick="fecharMenu()">Sobre</a></li>
+          <li><a href="#projetos" onclick="fecharMenu()">Projetos</a></li>
+          <li><a href="#contatos" onclick="fecharMenu()">Contato</a></li>
+        </ul>
+      </nav>
+      
+    <main id="inicio" class="cabecalho">
+                    <img src="./img/Foto (1).png" alt="Foto de Bruno Oliveira" class="foto-perfil">
+            <h1 class="eu">Bruno Oliveira</h1>
+            <p class="subtitulo">Desenvolvedor Front End </p>
+    <div class="icons">
+        <img align="left" alt="HTML" title="HTML" width="40px" style="padding-right: 14px;"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+        <img align="left" alt="CSS" title="CSS" width="40px" style="padding-right: 14px;"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+        <img align="left" alt="JavaScript" title="JavaScript" width="40px" style="padding-right: 14px;"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+        <img align="left" alt="TypeScript" title="TypeScript" width="40px" style="padding-right: 14px;"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+        <img align="left" alt="React" title="React" width="40px" style="padding-right: 14px;"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+    </div>
+               
+    </main>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+            Olá! Sou desenvolvedor front-end, apaixonado por transformar ideias em interfaces modernas, funcionais e responsivas. Tenho experiência em tecnologias como HTML, CSS, JavaScript e frameworks como React, sempre focado na criação de experiências intuitivas e acessíveis para o usuário.
+Trabalho com atenção aos detalhes, desempenho e boas práticas de desenvolvimento, além de manter constante atualização com as tendências do mercado. Meu objetivo é entregar soluções criativas e eficientes, que unam design e funcionalidade de forma harmoniosa.
+Seja em projetos próprios ou em colaboração com equipes, estou sempre em busca de novos desafios que me permitam evoluir e agregar valor por meio da tecnologia.
+        </p>
+       </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/projeto1.png"alt="projeto 1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                <h3 class="info-projetos">Loja de Carros</h3>
+                <p class="paragrafo-projetos">Loja virtual moderna com animações e design reponsivo</p>
+            </div>
+            </div>
+            <div class="projetos-card">
+                <img src="./img/projeto2.png"alt="projeto 2" class="projetos-imagem">
+            <div class="caixa-texto-projetos">  
+                <h3 class="info-projetos">Página de Viagens</h3>
+                <p class="paragrafo-projetos">Loja virtual moderna com animações e design reponsivo</p>
+            </div>  
+            </div>
+            <div class="projetos-card">
+                <img src="./img/projeto3.png"alt="microsoft" class="projetos-imagem">
+            <div class="caixa-texto-projetos">
+                <h3 class="info-projetos">Loja de Carros</h3>
+                <p class="paragrafo-projetos">Loja virtual moderna com animações e design reponsivo</p>
+            </div>
+            </div>
+        </div>    
+        </h2>
+
+    </section>
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato " id="formulario" onsubmit="enviarwhats(event)">
+            <div class="grupo-form">
+            <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+            <textarea class="campo-form" placeholder="Digite Sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Whatsapp </button>
+        </form>
+
+    </section>
+
+    <script >      
+    
+
+        function enviarwhats(event){
+
+        event.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const mensagem = document.getElementById('mensagem').value;
+        const telefone='5582987931086'
+        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+        const msgFormatada=encodeURIComponent(texto);
+        const url=`https://wa.me/${telefone}?text=${msgFormatada}`;
+        window.open(url, '_blank');
+        }
+    </script>
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuMobile");
+      menu.classList.toggle("show");
+    }
+  
+    function fecharMenu() {
+      const menu = document.getElementById("menuMobile");
+      menu.classList.remove("show");
+    }
+  </script>
+  
+  
+
+</body>
+
+</html>
