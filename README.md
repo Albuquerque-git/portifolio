@@ -8,11 +8,11 @@ Olá! Sou **Bruno Oliveira**, desenvolvedor front-end apaixonado por criar inter
 
 ## 🚀 Tecnologias que utilizo
 
-![HTML](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg)
-![CSS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg)
-![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg)
-![TypeScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg)
-![React](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg)
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="20" alt="HTML5"/> 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="20" alt="CSS3"/> 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20" alt="JavaScript"/> 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="20" alt="TypeScript"/> 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20" alt="React"/>
 
 ---
 
@@ -26,6 +26,14 @@ Site promocional de pacotes turísticos, desenvolvido para fins **educacionais e
 
 ### PetHotel (Fictício)
 Landing page de um hotel para pets, mostrando serviços e funcionalidades típicas de sites comerciais, criado como **projeto de demonstração**.
+
+---
+
+## 📞 Contato
+
+- 💬 WhatsApp: [Clique aqui para conversar](https://wa.me/5582982124994)
+- 🌐 GitHub: [https://github.com/albuquerque-git](https://github.com/albuquerque-git)
+- 🌐 LinkedIn: [https://www.linkedin.com/in/bruno-oliveira](https://www.linkedin.com/in/bruno-albuquerque-0593921a2/)
 
 ---
 
